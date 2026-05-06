@@ -1,5 +1,4 @@
-export type SummaryLength = "10s" | "30s" | "60s";
-
+export type SummaryLength = "Short" | "Medium" | "Long";
 export type Article = {
   id: string;
   headline: string;
@@ -9,9 +8,12 @@ export type Article = {
   imageUrl?: string;
   imageAlt?: string;
   fullUrl: string;
+
+  content: string;
+
   summaries: {
-    "10s": string;
-    "30s": string;
-    "60s": string;
+    Short: string;
+    Medium: string;
+    Long: string;
   };
 };

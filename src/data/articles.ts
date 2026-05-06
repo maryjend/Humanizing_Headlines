@@ -2,25 +2,21 @@ import { Article } from "@/types/article";
 
 export const articles: Article[] = [
   {
-    id: "arizona-records",
-    headline:
-      "Arizona Senate president says he complied with subpoena for 2020 election audit records",
+    id: "1",
+    headline: "Arizona Senate President complies with subpoena",
     source: "NPR",
-    date: "2026-03-09",
+    date: "2026-01-01",
     topic: "Politics",
-    imageUrl: "/images/arizona.jpg",
-    imageAlt: "Arizona government-related image",
-    fullUrl:
-      "https://www.npr.org/2026/03/09/nx-s1-5742633/arizona-maricopa-county-2020-records-petersen",
+    fullUrl: "https://...",
+    content:
+      "Arizona Senate President Warren Petersen confirmed he complied with a federal subpoena related to the 2020 election audit in Maricopa County. The subpoena is part of ongoing federal investigations into election processes and record handling.",
     summaries: {
-      "10s":
-        "Arizona Senate President Warren Petersen says he complied with a federal subpoena for records tied to the 2020 Maricopa County election audit.",
-      "30s":
-        "Arizona Senate President Warren Petersen said he turned over records after receiving a federal grand jury subpoena related to the Republican-led review of the 2020 election in Maricopa County. The request focuses on documents tied to how the audit was conducted.",
-      "60s":
-        "Arizona Senate President Warren Petersen says he has complied with a federal grand jury subpoena seeking documents related to the 2020 election audit in Maricopa County. The subpoena concerns records tied to the Republican-led ballot review that followed the presidential election. Petersen said the records were turned over to the FBI, while officials have not publicly detailed the broader scope of the investigation."
-    }
+      Short: "",
+      Medium: "",
+      Long: "",
+    },
   },
+
   {
     id: "anthropic-pentagon",
     headline:
@@ -32,15 +28,15 @@ export const articles: Article[] = [
     imageAlt: "Technology-related image",
     fullUrl:
       "https://www.npr.org/2026/03/09/nx-s1-5742548/anthropic-pentagon-lawsuit-amodai-hegseth",
+    content:
+      "Anthropic has sued the Pentagon after being labeled a supply-chain risk. The designation could limit the company's ability to work with the U.S. government. The dispute stems from Anthropic’s policies restricting certain military applications of its AI systems.",
     summaries: {
-      "10s":
-        "Anthropic is suing the Pentagon after being labeled a supply-chain risk over limits on military AI use.",
-      "30s":
-        "Anthropic filed suit after the Pentagon classified the company as a supply-chain risk. The dispute centers on Anthropic’s refusal to allow unrestricted military uses of its AI systems.",
-      "60s":
-        "Anthropic, an AI company, has sued the U.S. government after the Pentagon labeled it a supply-chain risk, a move that could block it from certain defense work. The conflict stems from Anthropic’s safeguards limiting use of its models for autonomous weapons and domestic surveillance. The case highlights growing tension over how AI tools should be used in national security settings."
-    }
+      Short: "",
+      Medium: "",
+      Long: "",
+    },
   },
+
   {
     id: "visas-deportation-lawsuit",
     headline:
@@ -52,13 +48,12 @@ export const articles: Article[] = [
     imageAlt: "University or immigration-related image",
     fullUrl:
       "https://www.npr.org/2026/03/09/nx-s1-5741213/trump-censorship-visas-deportation-lawsuit",
+    content:
+      "Civil liberties groups have filed a lawsuit challenging policies they say allow visa denial or deportation based on political views. The case raises concerns about free expression, academic freedom, and government overreach in immigration enforcement.",
     summaries: {
-      "10s":
-        "Civil liberties groups sued over policies they say allow visa denial or deportation based on political views.",
-      "30s":
-        "A lawsuit challenges policies that plaintiffs say let the government deny visas or deport people because of political speech or viewpoints. The case raises concerns about free expression and academic freedom.",
-      "60s":
-        "Civil liberties and academic groups have filed suit over policies they describe as ideological deportation. They argue the government is using immigration tools to punish or remove students and scholars based on political expression. The lawsuit claims the approach violates constitutional protections and could harm universities and international academic collaboration."
-    }
-  }
+      Short: "",
+      Medium: "",
+      Long: "",
+    },
+  },
 ];
