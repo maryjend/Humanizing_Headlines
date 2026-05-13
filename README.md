@@ -1,6 +1,6 @@
 # Humanizing Headlines
 
-Humanizing Headlines is a full-stack AI-powered news application designed to reduce news fatigue through intentional information design.
+Hello! Humanizing Headlines is a full-stack AI-powered news application designed to reduce news fatigue through intentional information design.
 
 The platform reimagines how users interact with modern news by combining AI-generated summaries, customizable reading depth, and calming user experience principles.
 
