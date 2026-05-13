@@ -57,13 +57,13 @@ export default function StoryPage() {
 
         setArticle(found);
 
-        // 🔍 Check if already saved
+        // Check if already saved
         if (user) {
           const saved = await isArticleSaved(user.uid, found.id);
           setIsSaved(saved);
         }
 
-        // 🔥 Fetch summaries
+        // Fetch summaries
         setLoadingSummary(true);
 
         const summaryRes = await fetch("/api/summarize", {

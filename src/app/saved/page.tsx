@@ -22,10 +22,10 @@ export default function SavedPage() {
         if (snap.exists()) {
           const data = snap.data();
 
-          // ✅ CORRECT PATH (matches your firestore.ts)
+          // path mathces firestoree
           const saved = data?.folders?.all?.articles || [];
 
-          console.log("Loaded saved:", saved); // debug
+          console.log("Loaded saved:", saved); // debug here
 
           setArticles(saved);
         }

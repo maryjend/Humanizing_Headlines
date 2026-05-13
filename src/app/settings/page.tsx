@@ -22,9 +22,7 @@ export default function SettingsPage() {
   const [loading, setLoading] = useState(true);
   const [savedMessage, setSavedMessage] = useState("");
 
-  /* =========================
-     LOAD USER PREFERENCES
-  ========================= */
+  /* LOAD USER PREFERENCES */
 
   useEffect(() => {
     async function loadPreferences() {
@@ -51,9 +49,7 @@ export default function SettingsPage() {
     loadPreferences();
   }, [user]);
 
-  /* =========================
-     ADD TRIGGER WORD
-  ========================= */
+  /* ADD TRIGGER WORD */
 
   const addTriggerWord = () => {
     const trimmed = triggerInput.trim();
@@ -71,9 +67,7 @@ export default function SettingsPage() {
     setTriggerInput("");
   };
 
-  /* =========================
-     REMOVE WORD
-  ========================= */
+  /* REMOVE WORD */
 
   const removeWord = (word: string) => {
     setTriggerWords(
@@ -81,9 +75,7 @@ export default function SettingsPage() {
     );
   };
 
-  /* =========================
-     SAVE PREFERENCES
-  ========================= */
+  /* SAVE PREFERENCES */
 
   const handleSave = async () => {
   if (!user) {
@@ -119,9 +111,7 @@ export default function SettingsPage() {
   }
 };
 
-  /* =========================
-     LOADING
-  ========================= */
+  /* LOADING */
 
   if (loading) {
     return (
@@ -133,9 +123,7 @@ export default function SettingsPage() {
     );
   }
 
-  /* =========================
-     NOT LOGGED IN
-  ========================= */
+  /* NOT LOGGED IN */
 
   if (!user) {
     return (
@@ -154,9 +142,7 @@ export default function SettingsPage() {
     );
   }
 
-  /* =========================
-     PAGE
-  ========================= */
+  /* PAGE */
 
   return (
     <main className="min-h-screen bg-slate-50 p-8">
