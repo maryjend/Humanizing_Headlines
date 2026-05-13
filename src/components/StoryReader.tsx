@@ -22,7 +22,7 @@ export default function StoryReader({ article }: { article: Article }) {
   const [error, setError] = useState<string | null>(null);
 
   const user = useAuth();
-  // 🔥 Load saved preferences
+  // Load saved preferences
   useEffect(() => {
     const savedLength = localStorage.getItem("preferredLength");
     const savedFilter = localStorage.getItem("filterOn");
@@ -31,7 +31,7 @@ export default function StoryReader({ article }: { article: Article }) {
     if (savedFilter) setFilterOn(savedFilter === "true");
   }, []);
 
-  // 🔥 Fetch AI summaries
+  // Fetch AI summaries
   useEffect(() => {
     let cancelled = false;
 
@@ -92,7 +92,7 @@ export default function StoryReader({ article }: { article: Article }) {
     };
   }, [article.id]);
 
-  // 🔥 Trigger word filtering
+  // TTrigger word filtering
   const triggerWords = ["audit", "lawsuit", "deportation"];
 
   function filterText(text: string) {
@@ -106,7 +106,7 @@ export default function StoryReader({ article }: { article: Article }) {
     return filtered;
   }
 
-  // 🔥 Get display text
+  // Get display text
   const displayText =
     (aiSummaries ?? article.summaries)[selectedLength];
 
@@ -188,7 +188,7 @@ export default function StoryReader({ article }: { article: Article }) {
         {article.headline}
       </h1>
 
-      {/* ⭐ SAVE BUTTON GOES HERE */}
+      {/* Save Buttonn */}
       <button
         onClick={() => {
           if (!user) {

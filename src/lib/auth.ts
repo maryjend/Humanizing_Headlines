@@ -11,9 +11,7 @@ import {
   signOut,
 } from "firebase/auth";
 
-/* =========================
-   SIGN UP
-========================= */
+/*  SIGN UP */
 
 export const signUp = async (
   email: string,
@@ -48,9 +46,7 @@ export const signUp = async (
   return userCred;
 };
 
-/* =========================
-   LOGIN
-========================= */
+/* LOGIN */
 
 export const login = (
   email: string,
@@ -63,9 +59,7 @@ export const login = (
   );
 };
 
-/* =========================
-   LOGOUT
-========================= */
+/* LOGOUT */
 
 export const logout = () => {
   return signOut(auth);
